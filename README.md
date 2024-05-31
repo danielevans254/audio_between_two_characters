@@ -7,3 +7,5 @@ Alice a quite enthusiastic journalist on the verge of a breakthrough with her jo
 - Eleven Labs
 - Literal AI
 - Chainlit
+
+Dont mind the readme in the src directory 👍 Same stuff there
