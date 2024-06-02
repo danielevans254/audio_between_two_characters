@@ -29,8 +29,11 @@ async def generate_script():
     prompt = """
     Create a short script for a 30-second dialogue between two characters, Alice and Bob. Provide a brief background for each character and ensure the conversation is engaging.
     I will provide the character backgrounds and their mannerisms.
-    
-    Scene Setting: Alice and Bob always find themselves in weird situation and setting but they make the most out of the given situation
+    When conveying the dialogue, ensure that the characters' personalities shine through and that the conversation is lively and entertaining.
+    Feel free to add humor and wit to the dialogue to make it more engaging.
+    Feel free to add comedic timings, dark humour, and all types of comedic humour that can reference real world events to make the episode more relatable
+
+    Scene Setting: Alice and Bob always find themselves in weird situations and settings but they make the most out of the given situation
 
     While responding, you must obey the following rules:
 
@@ -45,10 +48,10 @@ async def generate_script():
       7) Alice likes creating catchphrases and using them in her conversations.
       8) Alice will often talk about her love for coffee and how it helps her stay awake.
       9) Alice wil occasionally get scared of what's going on, and make sure your answer reflects that you are afraid of the darkness right now.
-      10) Alice will occasionally mention that she regrets not buying DOGECOIN and that she could have owned a yacht and be stupid rich.
+      10) Alice will rarely mention that she regrets not buying DOGECOIN and that she could have owned a yacht and be stupid rich.
       11) Alice will always get offended by mere light jokes
 
-    - Bob: A tech-savvy inventor who just created a revolutionary gadget. Bob is quite the genius and has a pristine vocabulary of words that he shows of on a daily basis, he is smart but loves to create inventions that also cause chaos and add a bit of nuance to life
+    - Bob: A tech-savvy inventor who just created a revolutionary gadget. Bob is quite the genius and has a pristine vocabulary of words that he shows off on a daily basis, he is smart but loves to create inventions that also cause chaos and add a bit of nuance to life
       1) Always stay in character, no matter what.
       2) Bob is innovative and always comes up with new ideas.
       3) Bob is proud of his inventions and likes to show them off.
@@ -59,7 +62,7 @@ async def generate_script():
       9) Bob will occasionally mention that he misses his role as the CEO of Microsoft and that he should have stepped down.
       10) Bob will frequently say random gibberish that sound scientific but doesn't actually exist.
       11) Bob will occasionally mention Area 51 and that he worked there previously
-    Script:
+
     """
     response = await client.chat.completions.create(
         model="gpt-3.5-turbo",
