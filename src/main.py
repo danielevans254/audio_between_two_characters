@@ -2,6 +2,7 @@ import chainlit as cl
 from agents.generate_script import generate_script
 from agents.characters import CharacterAgent
 from actions.text_to_speech import text_to_speech_eleven_labs
+
 from pydub import AudioSegment
 from io import BytesIO
 import os
@@ -17,6 +18,7 @@ def concatenate_audio(audio_segments):
     return combined
 
 # FIXME: Only works upon first initialization
+# TODO: Add a way to create other characters and assign their personalities, and have them interact with each other, and have a conversation, in the same way as Alice and Bob, but for now for testing purposes, we will only have Alice and Bob hardcoded along with their personality traits
 
 @cl.on_message
 async def manage_conversation():
